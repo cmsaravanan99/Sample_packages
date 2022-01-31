@@ -9,7 +9,7 @@ with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
 
 VERSION = '0.0.1'
 DESCRIPTION = 'sample_packages'
-LONG_DESCRIPTION = 'A package that allows to build simple streams of video, audio and camera data.'
+LONG_DESCRIPTION = 'Sample_packages_main'
 
 # Setting up
 setup(
