@@ -1,34 +1,24 @@
-from setuptools import setup, find_packages
-import codecs
-import os
+[metadata]
+name = Sample_packages-main-cmsar
+version = 0.0.1
+author = Example Author
+author_email = author@example.com
+description = A small example package
+long_description = file: README.md
+long_description_content_type = text/markdown
+url = https://github.com/pypa/sampleproject
+project_urls =
+    Bug Tracker = https://github.com/pypa/sampleproject/issues
+classifiers =
+    Programming Language :: Python :: 3
+    License :: OSI Approved :: MIT License
+    Operating System :: OS Independent
 
-here = os.path.abspath(os.path.dirname(__file__))
+[options]
+package_dir =
+    = src
+packages = find:
+python_requires = >=3.6
 
-with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
-    long_description = "\n" + fh.read()
-
-VERSION = '0.0.1'
-DESCRIPTION = 'sample_packages'
-LONG_DESCRIPTION = 'Sample_packages_main'
-
-# Setting up
-setup(
-    name="cmsarpackages",
-    version=VERSION,
-    author="Saravanan c",
-    author_email="<cmsaravanan99@gmail.com>",
-    description=DESCRIPTION,
-    long_description_content_type="text/markdown",
-    long_description=long_description,
-    packages=find_packages(),
-    install_requires=[],
-    keywords=['python', 'video', 'stream', 'video stream', 'camera stream', 'sockets'],
-    classifiers=[
-        "Development Status :: 1 - Planning",
-        "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3",
-        "Operating System :: Unix",
-        "Operating System :: MacOS :: MacOS X",
-        "Operating System :: Microsoft :: Windows",
-    ]
-)
+[options.packages.find]
+where = src
