@@ -1,5 +1,5 @@
 [metadata]
-name = Sample_packages-main-cmsar
+name = Sample_packages_Datastage
 version = 0.0.1
 author = Example Author
 author_email = author@example.com
